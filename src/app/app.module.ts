@@ -20,7 +20,7 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
     AppComponent,
     NavComponent,
     LoginLayoutComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
   ],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
