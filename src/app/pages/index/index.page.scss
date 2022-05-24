@@ -1,0 +1,48 @@
+$assetPath :"/assets/index";
+
+.text-home{
+    padding-top: 4em;
+    font-size: 3em;
+    line-height: 67px;
+}
+
+.description-header{
+    font-size: 1.5em;
+}
+
+.description-header button{
+    font-size: 1em;
+}
+  
+.img{
+    width: 600px;
+}
+
+@media screen and (min-width: 600px) {
+    .home{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .header{
+      max-width: 50% !important;
+      padding-right: 80px;
+    }
+  
+}
+  
+@media screen and (max-width: 600px) {
+    .text-home{
+      left: 6.2%;
+      right: 52.65%;
+      padding-top: 2em;
+      font-size: 2em;
+      line-height: 35px;
+    }
+    .text-home2{
+      font-size: 0.7em;
+    }
+    .md{
+      padding-bottom: 20px !important;
+    }
+  
+}
