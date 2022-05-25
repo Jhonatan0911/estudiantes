@@ -10,26 +10,33 @@
             <ion-card-title align="center">Login</ion-card-title>
           </ion-card-header>
           <ion-card-content>
-      
-            <ion-item>
-              <ion-label position="floating">Correo electronico</ion-label>
-              <ion-input type="email"></ion-input>
-            </ion-item>
-      
-            <ion-item>
-              <ion-label position="floating">Contraseña</ion-label>
-              <ion-input type="password"></ion-input>
-            </ion-item>
-      
+            <div class="mt-10 sm:mt-0">
+              <form action="#" method="POST">
+                <div class="overflow-hidden sm:rounded-md">
+                  <div class="px-4 py-5 bg-white sm:p-6">
+                    <div class="grid grid-cols-6 gap-6">
+
+                      <div class="col-span-6">
+                        <label for="street-address" class="block text-sm font-medium text-gray-700">Correo electronico</label>
+                        <input type="text" name="street-address" id="street-address"  class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+
+                      <div class="col-span-6">
+                        <label for="street-address" class="block text-sm font-medium text-gray-700">Contraseña</label>
+                        <input type="text" name="street-address" id="street-address"  class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </form>
+            </div>
             <br>
-      
             <ion-button expand="block">Ingresar</ion-button>
-        
           </ion-card-content>
         </ion-card>
       </ion-col>
       <ion-col class="dm-none"></ion-col>
     </ion-row>
   </ion-grid>
- 
 </ion-content>

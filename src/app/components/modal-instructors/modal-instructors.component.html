@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10">
+          <ion-title>Crear nuevo Instructor</ion-title>
+        </ion-col>
+        <ion-col size="2">
+          <button class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500" (click)="close()">X</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+    <div class="overflow-hidden sm:rounded-md">
+      <div class="px-4 py-5 bg-white sm:p-6">
+        <div class="grid grid-cols-6 gap-6">
+          <div class="col-span-6">
+            <label for="first-name" class="block text-sm font-medium text-gray-700">Nombre completo</label>
+            <input type="text" name="first-name" id="first-name" formControlName="name" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="country" class="block text-sm font-medium text-gray-700">Tipo de documento</label>
+            <select id="country" name="country" formControlName="typeDoc" class="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+              <option>CC</option>
+              <option>PS</option>
+              <option>CE</option>
+            </select>
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="last-name" class="block text-sm font-medium text-gray-700">Número de documento</label>
+            <input type="text" name="last-name" id="last-name" formControlName="doc" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="email-address" class="block text-sm font-medium text-gray-700">Correo electronico</label>
+            <input type="email" name="email-address" id="email-address" formControlName="email" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="email-address" class="block text-sm font-medium text-gray-700">Número de télefono</label>
+            <input type="number" name="email-address" maxlength="10" id="email-address" formControlName="phone" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+            <label for="street-address" class="block text-sm font-medium text-gray-700">Dirreción</label>
+            <input type="text" name="street-address" id="street-address" formControlName="address" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-6 lg:col-span-2">
+            <label for="city" class="block text-sm font-medium text-gray-700">Ciudad</label>
+            <input type="text" name="city" id="city" formControlName="city" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+            <label for="region" class="block text-sm font-medium text-gray-700">Departamento</label>
+            <input type="text" name="region" id="region" formControlName="departament" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="last-name" class="block text-sm font-medium text-gray-700">Contraseña</label>
+            <input type="text" name="last-name" id="last-name" formControlName="contraseña" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+
+          <div class="col-span-6 sm:col-span-3">
+            <label for="email-address" class="block text-sm font-medium text-gray-700">Confirmar</label>
+            <input type="email" name="email-address" id="email-address" class="mt-1 focus:ring-orange-500 focus:border-orange-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          </div>
+        </div>
+      </div>
+      <div class="px-4 py-3 text-right sm:px-6">
+        <button (click)="submit()" type="button" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">Guardar</button>
+      </div>
+    </div>
+  </form>
+</ion-content>
